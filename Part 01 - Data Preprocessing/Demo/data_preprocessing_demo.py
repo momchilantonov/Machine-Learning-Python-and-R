@@ -7,10 +7,8 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
 
-# read dataSet and creata dataFrame with name data
-data = pd.read_csv(
-    '/home/momchil/Dev/Machine-Learning-Python-and-R/Part 01 - Data Preprocessing/Demo/Data/Data.csv'
-)
+# read dataSet and create dataFrame with name data
+data = pd.read_csv('Data.csv')
 
 # separate data-features (X = independent variables) and data-targets(labels) (y = dependent variables) from the dataFrame
 X = data.iloc[:, :-1].values
@@ -43,7 +41,7 @@ y = targets_transfor.fit_transform(y)
 # check the tranformed data in data-tagets(labels)
 print(y)
 
-# split the date to train and test sets
+# split the data to train and test sets
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=1)
 

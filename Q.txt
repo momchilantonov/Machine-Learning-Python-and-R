@@ -1,1 +1,2 @@
-1. What is the differnce between  normally distributed and not normally distributed data? -> 1.5 Feature Scaling
+1. What is the differnce between normally distributed and not normally distributed data? -> 1.5 Feature Scaling
+2. When we must use Standardisation and when Noramlisation scaling?
